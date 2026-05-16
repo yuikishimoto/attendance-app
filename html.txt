@@ -1,21 +1,20 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>出欠フォーム</title>
-  <link rel="manifest" href="manifest.json">
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js");
+{
+  "name": "出欠フォーム",
+  "short_name": "出欠",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2b7cff",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
-  </script>
-  <style>
-    body { margin: 0; padding: 0; }
-    iframe { width: 100vw; height: 100vh; border: none; }
-  </style>
-</head>
-<body>
-  <iframe src="https://docs.google.com/forms/d/1zv9at6x-sNPZonINCtPVEHLgPWxelZPoi3_vOj5RhB8/edit"></iframe>
-</body>
-</html>
+  ]
+}
